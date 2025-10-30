@@ -1,0 +1,52 @@
+# LangGraph Core
+langgraph==0.4.8
+langgraph-checkpoint==2.0.26
+langgraph-checkpoint-sqlite==2.0.10
+langgraph-prebuilt==0.2.2
+langgraph-sdk==0.1.70
+
+
+# LangChain Core
+langchain==0.3.25
+langchain-core==0.3.64
+langchain-community==0.3.24
+langchain-anthropic==0.3.15
+langchain-text-splitters==0.3.8
+sentence-transformers
+langchain-huggingface===0.2.0
+
+# LLM Providers
+anthropic==0.53.0
+langchain-openai==0.3.21
+openai==1.85.0
+
+# MCP (Model Context Protocol)
+mcp==1.9.3
+mcp-server-fetch==2025.1.17
+
+# Vector DB
+pymilvus
+pymongo
+
+# Utils
+python-dotenv==1.1.0
+pydantic==2.11.5
+httpx==0.28.1
+
+# cpu version of torch
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+torchaudio
+
+# tools custom
+tavily-python
+
+#gradio
+gradio==5.14.0
+
+# MCP 
+langchain-mcp-adapters==0.1.11
+
+
+

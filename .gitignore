@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# uv environment
+.venv/
+.uv/
+
+# LangGraph / MCP cache
+.cache/
+.mcp/
+logs/
+
+# Hugging Face / Sentence Transformers
+.huggingface/
+models/
+*.pt
+*.bin
+
+# Environment
+.env
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+dist/
+build/
+
+# System
+.DS_Store
+Thumbs.db
+
+*.log
+
+# TensorBoard & common ML logs
+runs/
+lightning_logs/
+wandb/
+mlruns/
+checkpoints/
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+agent/eval/queries_with_results.jsonl
