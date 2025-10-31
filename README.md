@@ -181,7 +181,7 @@ async def semantic_search(state: State) -> dict:
 ## Project Flow
 
 <p align="center">
-  <img src="./agent/img/graph_flow.png" alt="Project Flow Diagram" width="40%"/>
+  <img src="./agent/img/graph_flow.png" alt="Project Flow Diagram" width="60%"/>
 </p>
 
 ### Generate Flow Diagram
