@@ -18,10 +18,10 @@ A RAG-powered chatbot built with **LangGraph** that answers questions about **Pr
 Get up and running in under 10 minutes:
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
+git clone <url>
 cd rag-chatbot-mvp
 
-# 2. Install dependencies (using uv)
+# 2. Install dependencies using uv
 uv sync
 uv add "mcp" httpx
 
@@ -36,10 +36,13 @@ copy .env.example .env  # On Windows
 # - Tavily API Key: Get free API at https://app.tavily.com/home
 # - Zilliz Milvus Cloud credentials (request access via GitHub issues if needed)
 
-# 4. Run the chatbot
+# 4. Activate UV environment
+source .venv/bin/activate  # On Unix/Linux/Mac
+
+# 5. Run the chatbot
 uv run agent/main.py
 
-# 5. Open in browser
+# 6. Open in browser
 # Navigate to: http://0.0.0.0:7860
 ```
 
@@ -53,6 +56,9 @@ uv run agent/main.py
 - **Zilliz Cloud Access**: Request access via GitHub issues if you need the vector store
 
 **Note:** The vector database is already populated. For re-ingestion, see `notebooks/ingestor.ipynb`
+
+**My setup:**
+- Linux
 
 ## Tech Stack
 
@@ -129,7 +135,10 @@ To start the chatbot system:
 ```bash
 uv run agent/main.py
 ```
-
+activate UV environment:
+```
+source .venv/bin/activate  # On Unix/Linux/Mac
+```
 The application will be available at:
 ```
 Running on local URL: http://0.0.0.0:7860
