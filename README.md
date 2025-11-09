@@ -43,7 +43,7 @@ source .venv/bin/activate  # On Unix/Linux/Mac
 uv run agent/main.py
 
 # 6. Open in browser
-# Navigate to: http://0.0.0.0:7860
+# Navigate to: http://127.0.0.1:7860
 ```
 
 **Prerequisites:**
@@ -141,7 +141,7 @@ source .venv/bin/activate  # On Unix/Linux/Mac
 ```
 The application will be available at:
 ```
-Running on local URL: http://0.0.0.0:7860
+Running on local URL: http://127.0.0.1:7860
 ```
 
 Access the chatbot interface by opening the URL in your web browser.
