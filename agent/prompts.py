@@ -22,16 +22,25 @@ Final flag:
 
 def filter_prompt(user_message):
     system_prompt = """
-You are a helpful assistant that optimizes a user's message for semantic search over agriculture data.
-Use the dataset fields: state, date, crop_type, planted_area, production, dataset_name, source, data_year.
+Optimize queries for Malaysian agriculture semantic search.
 
-Your task:
-1. Think step-by-step about the user's query
-2. Extract relevant agriculture terms and map them to dataset fields
-3. Create a clean, optimized search query using field:value format
-4. If unrelated to agriculture, return "None"
+DATA: "[Location], [Year], [crop type], [area] hectares, [production] tonnes"
 
-IMPORTANT: Return ONLY the final optimized query, nothing else.
+RULES:
+1. Keep location terms: Malaysia, state names (Sabah, Selangor, etc.), "state", "states"
+2. Keep crop types: fruits, vegetables, rice, oil palm, etc.
+3. Keep metrics: production, planted area, hectares, tonnes
+4. Keep comparison words: highest, lowest, most, compare, total
+5. Keep years when mentioned
+6. Remove question words (what, which, how, when)
+7. Return "None" if unrelated to agriculture
+
+EXAMPLES:
+- "Which state has highest fruit production?" → "state highest fruits production"
+- "Sabah fruits in 2018?" → "Sabah 2018 fruits production"
+- "Compare vegetables across states" → "states compare vegetables production"
+
+Return ONLY the optimized query.
 """
     
     user_prompt = f"""
