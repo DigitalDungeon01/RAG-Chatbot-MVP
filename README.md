@@ -23,7 +23,6 @@ cd rag-chatbot-mvp
 
 # 2. Install dependencies using uv
 uv sync
-uv add "mcp" httpx
 
 # 3. Configure environment variables
 # Copy the example environment file
@@ -36,13 +35,11 @@ copy .env.example .env  # On Windows
 # - Tavily API Key: Get free API at https://app.tavily.com/home
 # - Zilliz Milvus Cloud credentials (request access via GitHub issues if needed)
 
-# 4. Activate UV environment
-source .venv/bin/activate  # On Unix/Linux/Mac
 
-# 5. Run the chatbot
+# 4. Run the chatbot
 uv run agent/main.py
 
-# 6. Open in browser
+# 5. Open in browser
 # Navigate to: http://127.0.0.1:7860
 ```
 
