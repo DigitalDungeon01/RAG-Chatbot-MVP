@@ -100,10 +100,7 @@ demo = gr.ChatInterface(
         "howfhoefoshgioarghoearhgpeighhgoreig",
         "total production of palm oil in 2015-2025",
         "share me tips on how to take care indoor vegetables"
-        
-        
-        
-        
+        "does hugging face use torch ?"
     
     ],
     theme=gr.themes.Soft()

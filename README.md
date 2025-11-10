@@ -111,12 +111,7 @@ This project uses [uv](https://github.com/astral-sh/uv) for fast Python package 
 uv sync
 ```
 
-2. Install MCP tools dependencies (for SSE communication):
-```bash
-uv add "mcp" httpx
-```
-
-3. Configure environment variables:
+2. Configure environment variables:
 ```bash
 cp .env.example .env  # Unix/Linux/Mac
 # OR
@@ -131,10 +126,6 @@ Edit `.env` file with your API keys (see `.env.example` for required variables)
 To start the chatbot system:
 ```bash
 uv run agent/main.py
-```
-activate UV environment:
-```
-source .venv/bin/activate  # On Unix/Linux/Mac
 ```
 The application will be available at:
 ```
