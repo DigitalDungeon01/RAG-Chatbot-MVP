@@ -18,7 +18,7 @@ A RAG-powered chatbot built with **LangGraph** that answers questions about **Pr
 Get up and running in under 10 minutes:
 ```bash
 # 1. Clone the repository
-git clone <url>
+git clone https://github.com/DigitalDungeon01
 cd rag-chatbot-mvp
 
 # 2. Install dependencies using uv
